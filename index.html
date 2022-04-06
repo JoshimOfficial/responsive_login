@@ -9,13 +9,27 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" href="./fav_ic/fav.svg" >
 </head>
 <body>
     
-
+  <div class="loginSuccessModal"></div>
     <div class="container mt-5">
 
+      <div class="alert alert-danger emailPassNotMatched animate__animated" role="alert">
+        Email or Password are not matched!  
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="warning" viewBox="0 0 48 48"><defs><style>.cls-2{fill:#273941}.cls-3{fill:#141e21}.cls-4{fill:#f6fafd}.cls-10{fill:#ededed}</style></defs><g id="_17-face" data-name="17-face"><circle cx="24" cy="24" r="23" style="fill:#ffb32b"/><ellipse class="cls-2" cx="28" cy="25" rx="3" ry="4"/><ellipse class="cls-2" cx="10" cy="25" rx="3" ry="4"/><ellipse class="cls-3" cx="28" cy="25" rx="2" ry="3"/><ellipse class="cls-3" cx="10" cy="25" rx="2" ry="3"/><circle class="cls-4" cx="29" cy="24" r="1"/><circle class="cls-4" cx="11" cy="24" r="1"/><path class="cls-2" d="M23 38h-2c0-.408-.779-1-2-1s-2 .592-2 1h-2c0-1.683 1.757-3 4-3s4 1.317 4 3z"/><path d="M24 1a23 23 0 1 0 23 23A23 23 0 0 0 24 1zm-2 45a19 19 0 1 1 19-19 19 19 0 0 1-19 19z" style="fill:#ffce52"/><path d="M47 24A23 23 0 0 0 6.307 9.307a23 23 0 0 1 32.386 32.386A22.95 22.95 0 0 0 47 24z" style="fill:#ffe369"/><ellipse class="cls-4" cx="43" cy="26" rx=".825" ry="1.148" transform="rotate(-45.02 43 26)"/><ellipse class="cls-4" cx="43.746" cy="19.5" rx=".413" ry=".574" transform="rotate(-45.02 43.746 19.5)"/><ellipse class="cls-4" cx="43" cy="22" rx="1.65" ry="2.297" transform="rotate(-45.02 43 22)"/><path d="M47 8c0-3.866-4.029-7-9-7s-9 3.134-9 7c0 3.635 3.442 6.656 8 7v4l6.423-5.423A6.619 6.619 0 0 0 47 8z" style="fill:#5987dd"/><path d="M47 8c0-3.866-4.029-7-9-7a9.549 9.549 0 0 0-7.989 3.785A10.523 10.523 0 0 1 36 3c4.971 0 9 3.134 9 7a5.743 5.743 0 0 1-1 3.194A6.418 6.418 0 0 0 47 8z" style="fill:#95b4ff"/><path d="M37 19v-4c-4.558-.344-8-3.365-8-7a5.766 5.766 0 0 1 1.011-3.215A6.433 6.433 0 0 0 27 10c0 3.635 3.442 6.656 8 7v4l6.423-5.423A7.861 7.861 0 0 0 44 13.194c-.189.132-.378.264-.58.383z" style="fill:#f29410"/><path class="cls-10" d="M33 7h2v2h-2zM37 7h2v2h-2z"/></g></svg>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="getPass" viewBox="0 0 48 48"><defs><radialGradient id="radial-gradient" cx="-6.714" cy="24.714" r="6" gradientTransform="translate(16.833 -4.833) scale(1.167)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff568d"/><stop offset=".454" stop-color="#ff9678"/><stop offset=".817" stop-color="#ffc26a"/><stop offset="1" stop-color="#ffd364"/></radialGradient><radialGradient id="radial-gradient-2" cx="19" cy="24.714" xlink:href="#radial-gradient"/><style>.cls-6{fill:#3bc5f6}.cls-7{fill:#00a3e1}.cls-8{fill:#273941}</style></defs><g id="_16-cute" data-name="16-cute"><circle cx="24" cy="24" r="23" style="fill:#ffce52"/><path d="M24 4c12.15 0 22 8.507 22 19h.975a23 23 0 0 0-45.95 0H2C2 12.507 11.85 4 24 4z" style="fill:#ffe369"/><path d="M46 23c0 10.493-9.85 19-22 19S2 33.493 2 23h-.975c-.014.332-.025.665-.025 1a23 23 0 0 0 46 0c0-.335-.011-.668-.025-1z" style="fill:#ffb32b"/><circle cx="9" cy="24" r="7" style="fill:url(#radial-gradient)"/><circle cx="39" cy="24" r="7" style="fill:url(#radial-gradient-2)"/><path class="cls-6" d="M2.657 9 5 6.657 3.828 5.485a1.657 1.657 0 0 0-2.343 0 1.657 1.657 0 0 0 0 2.343zM6.657 5 9 2.657 7.828 1.485a1.657 1.657 0 0 0-2.343 0 1.657 1.657 0 0 0 0 2.343z"/><path class="cls-7" d="M2.485 6.485a1.657 1.657 0 0 1 2.343 0l-1-1a1.657 1.657 0 0 0-2.343 2.343l1 1a1.657 1.657 0 0 1 0-2.343zM6.485 2.485a1.657 1.657 0 0 1 2.343 0l-1-1a1.657 1.657 0 0 0-2.343 2.343l1 1a1.657 1.657 0 0 1 0-2.343z"/><path class="cls-8" d="M32 25.12C31.96 31.71 28.97 38 24 38s-7.96-6.29-8-12.88a8.232 8.232 0 0 0 4 .88 5.824 5.824 0 0 0 4-2 5.824 5.824 0 0 0 4 2 8.232 8.232 0 0 0 4-.88z"/><path d="M24 38c3.444 0 5.934-3.022 7.154-7.069A13.582 13.582 0 0 0 24 29a13.582 13.582 0 0 0-7.154 1.931C18.066 34.978 20.556 38 24 38z" style="fill:#ae2d4c"/><path d="M24 36c-2.954 0-5.2-2.226-6.554-5.412-.2.11-.407.222-.6.343C18.066 34.978 20.556 38 24 38s5.934-3.022 7.154-7.069c-.193-.121-.4-.233-.6-.343C29.2 33.774 26.954 36 24 36z" style="fill:#8a293d"/><path class="cls-8" d="M40.553 19.9C38.764 19 36.717 19 33 19a1 1 0 0 1-1-1c0-2.265 3.568-5 8-5v2a7.807 7.807 0 0 0-5.419 2c3.058.018 4.963.151 6.866 1.1zM7.447 19.9l-.894-1.79c1.9-.951 3.808-1.084 6.866-1.1A7.807 7.807 0 0 0 8 15v-2c4.432 0 8 2.735 8 5a1 1 0 0 1-1 1c-3.717 0-5.764 0-7.553.9zM28 27a6.127 6.127 0 0 1-4-1.642A6.127 6.127 0 0 1 20 27c-4.836 0-7-2.511-7-5h2c0 1.794 2.01 3 5 3a4.791 4.791 0 0 0 3.293-1.707 1 1 0 0 1 1.414 0A4.791 4.791 0 0 0 28 25c2.99 0 5-1.206 5-3h2c0 2.489-2.164 5-7 5z"/><path class="cls-6" d="M45.343 9 43 6.657l1.172-1.172a1.657 1.657 0 0 1 2.343 0 1.657 1.657 0 0 1 0 2.343zM41.343 5 39 2.657l1.172-1.172a1.657 1.657 0 0 1 2.343 0 1.657 1.657 0 0 1 0 2.343z"/><path class="cls-7" d="M46.515 5.485a1.657 1.657 0 0 0-2.343 0l-1 1a1.657 1.657 0 1 1 2.343 2.343l1-1a1.657 1.657 0 0 0 0-2.343zM42.515 1.485a1.657 1.657 0 0 0-2.343 0l-1 1a1.657 1.657 0 0 1 2.343 2.343l1-1a1.657 1.657 0 0 0 0-2.343z"/></g></svg>
+
+
+
+      </div>
         <div class="login-box">
             <div class="header">
               <svg id = "default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.cls-4{fill:#88d6f9}.cls-5{fill:#e5ebf7}.cls-8{fill:#273941}.cls-9{fill:#3bc5f6}.cls-10{fill:#f6fafd}</style></defs><g id="_25-mask" data-name="25-mask"><circle cx="24" cy="24" r="23" style="fill:#ffce52"/><path d="M24 4c12.15 0 22 8.507 22 19h.975a23 23 0 0 0-45.95 0H2C2 12.507 11.85 4 24 4z" style="fill:#ffe369"/><path d="M46 23c0 10.493-9.85 19-22 19S2 33.493 2 23h-.975c-.014.332-.025.665-.025 1a23 23 0 0 0 46 0c0-.335-.011-.668-.025-1z" style="fill:#ffb32b"/><path class="cls-4" d="M13 32.6v-4.2c0-1.325 1.407-2.4 3.143-2.4h15.714C33.593 26 35 27.075 35 28.4v4.2c0 1.658-4.92 5.4-11 5.4s-11-3.742-11-5.4z"/><path class="cls-5" d="M9 33v-7a4.151 4.151 0 0 1 4.286-4h21.428A4.151 4.151 0 0 1 39 26v7c0 2.764-6.709 9-15 9S9 35.764 9 33z"/><path d="M12 32.7v-4.9c0-1.546 1.535-2.8 3.429-2.8h17.142C34.465 25 36 26.254 36 27.8v4.9c0 1.935-5.367 6.3-12 6.3s-12-4.365-12-6.3z" style="fill:#ccedfc"/><path d="M34.714 22H13.286A4.151 4.151 0 0 0 9 26v2a4.151 4.151 0 0 1 4.286-4h21.428A4.151 4.151 0 0 1 39 28v-2a4.151 4.151 0 0 0-4.286-4z" style="fill:#ededed"/><path class="cls-8" d="M29 15v2c4.883 0 8 1.776 8 3h2c0-2.851-4.3-5-10-5zM9 20h2c0-1.224 3.117-3 8-3v-2c-5.7 0-10 2.149-10 5z"/><path class="cls-5" d="M39 26v.25l7.727-5.8q-.169-1.1-.443-2.167l-7.8 5.849A3.752 3.752 0 0 1 39 26zM39.153 32v1a1.932 1.932 0 0 1-.392 1h5.956q.472-.975.851-2zM9 26a3.752 3.752 0 0 1 .515-1.864l-7.8-5.849q-.272 1.065-.443 2.167L9 26.25zM9 33v-1H2.432q.38 1.023.851 2h5.956A2.776 2.776 0 0 1 9 33z"/><path class="cls-4" d="M31.857 26H16.143a3.009 3.009 0 0 0-3.09 2h21.894a3.009 3.009 0 0 0-3.09-2z"/><path class="cls-9" d="M24 38a15.9 15.9 0 0 0 7.634-2H16.366A15.9 15.9 0 0 0 24 38zM35 28.4a1.843 1.843 0 0 0-.053-.4H13.053a1.843 1.843 0 0 0-.053.4V32h22z"/><path class="cls-4" d="M35 32.6V32H13v.6c0 .848 1.294 2.241 3.366 3.4h15.268C33.706 34.841 35 33.448 35 32.6z"/><ellipse class="cls-10" cx="37" cy="9" rx=".825" ry="1.148" transform="rotate(-45.02 37 9)"/><ellipse class="cls-10" cx="30.746" cy="4.5" rx=".413" ry=".574" transform="rotate(-45.02 30.745 4.5)"/><ellipse class="cls-10" cx="34" cy="7" rx="1.65" ry="2.297" transform="rotate(-45.02 34 7)"/></g></svg>
@@ -24,25 +38,50 @@
 
 
               <svg id = "pass_typing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.cls-4{fill:#f6fafd}.cls-5{fill:#273941}.cls-9{fill:#048ec6}</style></defs><g id="_24-sleep" data-name="24-sleep"><circle cx="24" cy="24" r="23" style="fill:#ffce52"/><path d="M24 4c12.15 0 22 8.507 22 19h.975a23 23 0 0 0-45.95 0H2C2 12.507 11.85 4 24 4z" style="fill:#ffe369"/><path d="M46 23c0 10.493-9.85 19-22 19S2 33.493 2 23h-.975c-.014.332-.025.665-.025 1a23 23 0 0 0 46 0c0-.335-.011-.668-.025-1z" style="fill:#ffb32b"/><ellipse class="cls-4" cx="37" cy="8" rx=".825" ry="1.148" transform="rotate(-45.02 37 8)"/><ellipse class="cls-4" cx="30.746" cy="3.5" rx=".413" ry=".574" transform="rotate(-45.02 30.746 3.5)"/><ellipse class="cls-4" cx="34" cy="6" rx="1.65" ry="2.297" transform="rotate(-45.02 34 6)"/><ellipse class="cls-5" cx="24" cy="31" rx="4" ry="5"/><path d="M24 27c2.072 0 3.756 1.977 3.96 4.5.013-.167.04-.329.04-.5 0-2.761-1.791-5-4-5s-4 2.239-4 5c0 .171.027.333.04.5.204-2.523 1.888-4.5 3.96-4.5z" style="fill:#141e21"/><path d="M24 36a4.024 4.024 0 0 0 3.579-2.808 5.969 5.969 0 0 0-7.158 0A4.024 4.024 0 0 0 24 36z" style="fill:#ae2d4c"/><path d="M24 35a3.789 3.789 0 0 1-3.2-2.047c-.125.08-.258.15-.378.239A4.024 4.024 0 0 0 24 36a4.024 4.024 0 0 0 3.579-2.808c-.12-.089-.253-.159-.378-.239A3.789 3.789 0 0 1 24 35z" style="fill:#8a293d"/><path class="cls-5" d="M14 23a5.006 5.006 0 0 1-5-5h2a3 3 0 0 0 6 0h2a5.006 5.006 0 0 1-5 5zM34 23a5.006 5.006 0 0 1-5-5h2a3 3 0 0 0 6 0h2a5.006 5.006 0 0 1-5 5z"/><path class="cls-9" d="M48 8h-7a1 1 0 0 1-.707-1.707L44.586 2H41V0h6a1 1 0 0 1 .707 1.707L43.414 6H48zM36 15h-6a1 1 0 0 1-.707-1.707L33.586 9H30V7h6a1 1 0 0 1 .707 1.707L32.414 13H36zM26 11h-4a1 1 0 0 1-.707-1.707L23.586 7H22V5h4a1 1 0 0 1 .707 1.707L24.414 9H26z"/></g></svg>
-
-
-
-
             </div>
+            
+
+
+  <div class="card loginSuccess animate__animated" style="width: 18rem;">
+    <div class="card-body " style="background-color: #ebf3ff;">
+      <div class="skipCard">
+        <span class="material-icons">
+          close
+          </span>
+      </div>
+    <div class="loginDiv"> <span class="bg-success loginSpan">Login Successful!!</span></div>
+      <h6 class="card-subtitle mb-2 text-muted loginH6">Login info:-</h6>
+      <p class="card-text">Thanks for being awesome!
+        We would like to thank you for login to us. <br>
+        &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace; -Thanks</p>
+    </div>
+  </div>
+
             <div class="login-field">
 
                 <form class="row g-3">
+                  <div class="emailSec animate__animated">
+                    <div class="alert-success recPass animate__animated">Email: admin <br> pass: 123</div>
                     <div class="row-md-6">
-                      <label for="inputEmail4" class="form-label">Email</label>
+                      <label for="inputEmail4" class="form-label emailText" style="margin-top: 10px">Email:</label>
                       <input type="text" class="form-control" id="inputEmail4">
                     </div>
-                    <div class="row-md-6">
-                      <label for="inputPassword4" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+
+
+                    <div class="passSec animate__animated ">
+                      <div class="row-md-6 ">
+                        <label for="inputPassword4" class="form-label passText">Password:</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
                     </div>
+
                    
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    <div class="col-12  ">
+                      <button type="button" class="btn btn-primary login">Login</button>
+                    </div>
+                    <div class="forgot_pass">
+                      Forgot your <a href="#"> password?</a>
                     </div>
                   </form>
                 
