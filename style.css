@@ -1,3 +1,4 @@
+
 #header_img {
     width: 100px;
     height: 100px;
@@ -7,7 +8,7 @@
     border: 1px solid #b1bcc7;
     padding: 20px;
     border-radius: 5px;
-    width: 350px;
+    width: 300px;
     margin: auto;
 }
 
@@ -30,4 +31,73 @@ svg {
 
 #pass_typing {
     display: none;
+}
+
+a {
+    text-decoration: none;
+}
+.loginSuccessModal {
+    width: 100%;
+    height: 100%;
+    background: #0000006e;
+    position: absolute;
+    margin-top: -48px;
+    display: none;
+}
+
+.loginSuccess {
+    position: absolute;
+    margin-left: -15px;
+    transition: 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+
+.loginSpan {
+    padding: 6px;
+    color: white;
+    border-radius: 3px;
+}
+
+.loginDiv {
+    text-align: center;
+}
+
+.loginH6 {
+    margin-top: 15px;
+}
+
+.skipCard {
+    float: right;
+    margin-top: -10px;
+    margin-right: -10px;
+    cursor: pointer;
+}
+
+.emailPassNotMatched {
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+}
+
+.warning {
+    height: 50px;
+    margin-left: -10px;
+    display: none;
+}
+
+
+.getPass {
+    width: 45px;
+    display: none;
+    transition: 1s;
+}
+
+.recPass {
+    padding: 5px;
+    text-align: center;
+    margin-top: 12px;
+    transition: 1s;
 }
